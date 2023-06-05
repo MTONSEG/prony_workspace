@@ -1,0 +1,26 @@
+.item-top-footer {
+	font-family: 'Nunito';
+	&__title {
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		color: #F43658;
+		margin: 0 0 16px;
+	}
+	&__item {
+		margin: 0 0 6px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__link {
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.6px;
+		color: #fff;
+		white-space: nowrap;
+		&:hover {
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+}
