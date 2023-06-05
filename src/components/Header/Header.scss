@@ -1,0 +1,34 @@
+.header {
+	background: #fff;
+	border-top: 2px solid #1565C0;
+	border-bottom: 3px solid #F8FAFF;
+	&__row,
+	&__nav,
+	&__link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__row {
+		padding: 23px 0 24px;
+	}
+	&__nav {
+		gap: 40px;
+	}
+	&__link {
+		gap: 10px;
+		font-weight: 500;
+		letter-spacing: 0.06px;
+		color: #272557;
+		padding: 3px 0;
+		fill: #7791C2;
+		svg {
+			// transition: all .2s;
+			margin: 2px 0 0;
+		}
+		&:hover {
+			color: #1565C0;
+			fill: #1565C0;
+		}
+	}
+}
