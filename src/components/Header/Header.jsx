@@ -8,15 +8,15 @@ const Header = ({ state }) => {
 		<header className='header'>
 			<div className="container">
 				<div className='header__row'>
-					<div className="header__logo">
+					<Link to='/' className="header__logo">
 						<LogoIcon />
-					</div>
+					</Link>
 					<nav className='header__nav'>
-						<Link className='header__link'>
+						<Link to="/board" className='header__link'>
 							<BoardsIcon />
 							<span className='header__text-link'>{state.board}</span>
 						</Link>
-						<Link className='header__link'>
+						<Link to="/changelog" className='header__link'>
 							<ChangelogIcon />
 							<span className='header__text-link'>{state.changelog}</span>
 						</Link>

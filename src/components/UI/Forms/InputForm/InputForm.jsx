@@ -22,7 +22,6 @@ const InputForm = ({
 				name={name ? name : ''}
 				aria-label={name ? name : ''}
 				value={value}
-				setValue={setValue}
 				onChange={e => { onInputChangeHandler(e) }}
 			/>
 		</>

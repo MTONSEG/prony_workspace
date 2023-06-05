@@ -59,6 +59,7 @@ input[type="number"]:focus {
    -moz-appearance: textfield;
 }
 button {
+	background: transparent;
 	cursor: pointer;
 	transition: $linkTransition;
 }

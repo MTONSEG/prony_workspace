@@ -4,6 +4,8 @@ import '../Forms.scss';
 import InputForm from "../InputForm/InputForm";
 
 const SearchForm = ({ style, value, setValue, ph }) => {
+
+
 	return (
 		<div style={style ? style : {}}
 			className="search-form">

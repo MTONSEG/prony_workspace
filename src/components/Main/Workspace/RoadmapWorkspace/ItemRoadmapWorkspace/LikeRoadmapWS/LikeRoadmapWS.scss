@@ -1,0 +1,20 @@
+.like-block {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	fill: #CDDAF2;
+	color: #7791C2;
+	line-height: 21px;
+	margin: 0 28px 0 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	span {
+		user-select: none;
+	}
+	&.active {
+		fill:#1565C0;
+	}
+}

@@ -132,17 +132,17 @@ export const mainScreen = {
 			{
 				id: v1(),
 				title: 'Board title',
-				amount: '23'
+				amount: 23
 			},
 			{
 				id: v1(),
 				title: 'Board title',
-				amount: '23'
+				amount: 23
 			},
 			{
 				id: v1(),
 				title: 'Board title',
-				amount: '23'
+				amount: 23
 			},
 		]
 	},
@@ -262,6 +262,35 @@ export const mainScreen = {
 			},
 		]
 	}
+}
+export const boardScreen = {
+	titleBtn: 'Clear filters',
+	selects: [
+		{
+			id: v1(),
+			default: 'Sort by',
+			title: 'Sort by:',
+			list: ['My posts', 'My posts', 'My posts']
+		},
+		{
+			id: v1(),
+			default: 'Showing',
+			title: 'Showing:',
+			list: ['Tranding 1', 'Tranding 2', 'Tranding 3']
+		},
+		{
+			id: v1(),
+			default: 'Showing',
+			title: 'Showing:',
+			list: ['Tranding 1', 'Tranding 2', 'Tranding 3']
+		},
+		{
+			id: v1(),
+			default: 'Showing',
+			title: 'Showing:',
+			list: ['Tranding 1', 'Tranding 2', 'Tranding 3']
+		},
+	]
 }
 
 export const store = {

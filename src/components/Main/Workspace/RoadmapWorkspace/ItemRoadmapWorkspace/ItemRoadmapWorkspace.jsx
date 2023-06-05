@@ -2,6 +2,7 @@ import React from "react";
 import { LikeIcon } from "../../../../UI/SVGIcons/SVGIcons";
 import './ItemRoadmapWorkspace.scss';
 import LabelItemRoadmapWS from "./LabelItemRoadmapWS/LabelItemRoadmapWS";
+import LikeRoadmapWS from "./LikeRoadmapWS/LikeRoadmapWS";
 
 const ItemRoadmapWorkspace = ({ title, labelBg, list }) => {
 
@@ -15,10 +16,7 @@ const ItemRoadmapWorkspace = ({ title, labelBg, list }) => {
 				{
 					list.map(el => (
 						<li key={el.id} className="item-roadmap-ws__item">
-							<div className="item-roadmap-ws__likes">
-								<LikeIcon />
-								<span>{el.amount}</span>
-							</div>
+							<LikeRoadmapWS amount={el.amount} />
 							<div className="item-roadmap-ws__body-item">
 								<h1 className="item-roadmap-ws__title-item">
 									{el.title}
