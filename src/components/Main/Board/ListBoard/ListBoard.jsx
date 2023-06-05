@@ -1,13 +1,24 @@
 import React from "react";
-import FilterBoard from "../FilterBoard/FilterBoard";
+import ItemListBoard from "./ItemListBoard/ItemListBoard";
 import './ListBoard.scss';
 
 const ListBoard = ({ state, style }) => {
 	return (
-		<div style={style ? style : {}}
+		<ul style={style ? style : {}}
 			className='list-board'>
-			
-		</div>
+			{
+				state.list.map(el => (
+					<ItemListBoard
+						key={el.id}
+						status={el.status}
+						likes={el.likes}
+						messages={el.messages}
+						title={el.title}
+						text={el.text}
+					/>
+				))
+			}
+		</ul>
 	)
 }
 

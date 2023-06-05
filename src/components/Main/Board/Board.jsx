@@ -3,6 +3,7 @@ import { boardScreen } from "../../../store";
 import './Board.scss';
 import FilterBoard from "./FilterBoard/FilterBoard";
 import ListBoard from "./ListBoard/ListBoard";
+import NavPages from "./NavPages/NavPages";
 
 const Board = () => {
 	const [state, setState] = useState(boardScreen);
@@ -17,12 +18,18 @@ const Board = () => {
 						flex: '0 0 360px',
 					}
 				} />
-			<ListBoard style={
-				{
-					width: '100%',
-					paddingTop: '21px'
-				}
-			} />
+			<div className="board__right">
+				<ListBoard
+					style={
+						{
+							width: '100%',
+							paddingTop: '21px'
+						}
+					}
+					state={state} />
+				<NavPages/>
+			</div>
+
 		</div>
 	)
 }

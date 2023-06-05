@@ -1,0 +1,51 @@
+.item-list-board {
+	position: relative;
+	padding: 0 56px 0 41px;
+	margin: 0 0 30px;
+	&__messages,
+	&__status-label {
+		position: absolute;
+	}
+	&__messages {
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		font-size: 12px;
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #1565C0;
+		fill: #E5ECF9;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 128.5%;
+		color: #272557;
+		margin: 0 0 5px;
+	}
+	&__status {
+		padding: 0 0 0 16px;
+		position: relative;
+		margin: 0 0 5px;
+	}
+	&__status-label {
+		border-radius: 100%;
+		width: 6.2px;
+		height: 6.2px;
+		top: calc(50% - 3.1px);
+		left: 3px;
+	}
+	&__status-text {
+		font-size: 11px;
+		line-height: 16px;
+		letter-spacing: 0.06px;
+		color: #7791C2;
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 128.5%;
+		color: #272557;
+	}
+}

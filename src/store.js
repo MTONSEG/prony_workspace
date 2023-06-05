@@ -290,9 +290,207 @@ export const boardScreen = {
 			title: 'Showing:',
 			list: ['Tranding 1', 'Tranding 2', 'Tranding 3']
 		},
+	],
+	list: [
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'In progress',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'In progress',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'Complete',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
+		{
+			id: v1(),
+			status: 'In progress',
+			likes: 23,
+			messages: 12,
+			title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sed dictum nibh. Tempor, sed molestie neque morbi. Sed sed non, in est turpis nulla tortor.',
+		},
 	]
 }
 
+export const postScreen = {
+	title: 'Post view',
+	viewPost: {
+		name: 'Ross Gillespie',
+		photo: images.posts.postPhoto1,
+		title: 'Send status updates back through Intercom',
+		time: '3 min ago',
+		status: 'Complete',
+		text: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+		image: images.postView.imagePostView,
+		amountLikes: '24',
+		tags: [
+			{
+				title: 'Tagname1',
+				color: '#EB5757',
+			},
+			{
+				title: 'Tagname2',
+				color: '#27AE60',
+			},
+		],
+		placeholder: 'Enter detailes',
+		upload: {
+			title: 'Image',
+			image: images.createPost.uploadedImage,
+		},
+		privacy: {
+			title: 'Privacy',
+			list: [
+				{
+					title: 'Public',
+					value: 'public'
+				},
+				{
+					title: 'Private',
+					value: 'private'
+				},
+			]
+		},
+		sortList: ['Recent', 'Private', 'Public']
+	},
+	messages: [
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto1,
+			name: 'Sophia-Rose Nava',
+			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: true,
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto2,
+			name: 'Anna Walley',
+			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: false,
+			reply: [{
+				id: v1(),
+				photo: images.postView.commentPhoto5,
+				name: 'Uzair Valdez',
+				message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+				amountLikes: 3,
+				date: '01-02-2020',
+				privacy: false,
+			},],
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto3,
+			name: 'Kaylan Graham',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: false,
+			merge: [
+				{
+					id: v1(),
+					photo: images.postView.commentPhoto6,
+					name: 'Anna Walley',
+					message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+					amountLikes: 3,
+					date: '01-02-2020',
+					privacy: false,
+				},
+			],
+		},
+		{
+			id: v1(),
+			photo: images.postView.commentPhoto4,
+			name: 'Kasim Daniels',
+			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
+			amountLikes: 3,
+			date: '01-02-2020',
+			privacy: false,
+			image: images.postView.commentImage
+		},
+	]
+}
 export const store = {
 	header: header,
 	footer: footer
