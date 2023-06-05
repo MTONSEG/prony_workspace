@@ -1,0 +1,40 @@
+.item-roadmap-ws {
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+	background: #F8FAFF;
+	border-radius: 10px;
+	padding: 22px 20px 32px;
+	&__item,
+	&__likes {
+		display: flex;
+	}
+	&__item {
+		margin: 0 0 21px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__likes {
+		flex-direction: column;
+		gap: 5px;
+		fill: #CDDAF2;
+		color: #7791C2;
+		line-height: 21px;
+		margin: 0 28px 0 0;
+		flex: 0 0 auto;
+	}
+	&__body-item {
+		width: 100%;
+	}
+	&__title-item {
+		font-weight: 500;
+		line-height: 18px;
+		margin: 0 0 6px;
+	}
+	&__subtitle-item {
+		font-size: 12px;
+		line-height: 18px;
+		color: #7791C2;
+	}
+}
