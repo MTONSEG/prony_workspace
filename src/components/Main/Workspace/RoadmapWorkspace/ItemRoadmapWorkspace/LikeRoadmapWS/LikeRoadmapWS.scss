@@ -1,6 +1,7 @@
 .like-block {
 	flex: 0 0 auto;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	gap: 5px;
 	fill: #CDDAF2;
@@ -12,6 +13,12 @@
 	left: 0;
 	span {
 		user-select:none;
+	}
+	&.horizontal {
+		flex-direction: row;
+		svg {
+			margin: 0 0 4px;
+		}
 	}
 	&.active {
 		fill:#1565C0;

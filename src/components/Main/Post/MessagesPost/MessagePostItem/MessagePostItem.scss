@@ -1,0 +1,100 @@
+.messages-post-item {
+	padding: 17px 43px 13px;
+	background: #fff;
+	position: relative;
+	&.reply {
+		padding: 17px 0 13px;
+		background: transparent;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: calc(100% - 84px);
+			right: calc(100% - -10px);
+			width: 40px;
+			height: 127px;
+			border-left: 1px solid;
+			border-bottom: 1px solid;
+			border-color: #CDDAF2;
+		}
+	}
+	& .merge {
+		padding: 17px 28px 13px;
+		border: 4px solid #F8FAFF;
+		border-radius: 5px;
+		background: #fff;
+		margin: 0 0 20px;
+		& .messages-buttons {
+			display: none;
+		}
+		& .messages-post-item__head {
+			margin: 0 0 18px 0;
+			display: block;
+		}
+		& .messages-post-item__likes {
+			gap: 10px;
+		}
+		& .messages-post-item__merged-text {
+			font-weight: 600;
+			line-height: 21px;
+			letter-spacing: 0.07px;
+			margin: 0 0 14px;
+		}
+	}
+	&:nth-child(2n) {
+		background: #F8FAFF;
+	}
+	&.privacy {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 2px;
+			background: #1565C0;
+		}
+	}
+
+	&__body,
+	&__head,
+	&__likes {
+		display: flex;
+		align-items: center;
+	}
+
+	&__head {
+		margin: 0 0 18px 74px;
+		position: relative;
+		padding: 0 0 0 80px;
+	}
+	
+	&__likes,
+	&__date {
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #7791C2;
+	}
+
+	&__body {
+		align-items: flex-start;
+	}
+
+	&__photo {
+		flex: 0 0 50px;
+		height: 50px;
+		border-radius: 100%;
+		margin: 0 24px 0 0;
+	}
+	&__name {
+		font-weight: 500;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		margin: 0 0 5px;
+	}
+	&__mess {
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0.08px;
+		margin: 0 0 15px;
+	}
+}

@@ -4,6 +4,7 @@ import { postScreen } from '../../../store';
 import VotersPost from './VotersPost/VotersPost';
 import BodyPost from './BodyPost/BodyPost';
 import FormsPost from './FormsPost/FormsPost';
+import MessagesPost from './MessagesPost/MessagesPost';
 
 
 const Post = props => {
@@ -14,6 +15,9 @@ const Post = props => {
 			<VotersPost state={state.voters} style={{ margin: '0 0 25px' }} />
 			<BodyPost state={state.post} style={{ margin: '0 0 29px' }} />
 			<FormsPost privacy={state.privacy} />
+			<MessagesPost
+				state={state.messages}
+			/>
 		</div>
 	)
 }

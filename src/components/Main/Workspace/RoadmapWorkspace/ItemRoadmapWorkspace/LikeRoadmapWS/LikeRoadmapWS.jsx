@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { LikeIcon } from "../../../../../UI/SVGIcons/SVGIcons";
 import './LikeRoadmapWS.scss';
 
-const LikeRoadmapWS = ({ amount, style }) => {
+const LikeRoadmapWS = ({ amount, style, type }) => {
 
 	const [amountValue, setAmountValue] = useState(Number(amount));
 	const ref = useRef(null);
@@ -18,16 +18,17 @@ const LikeRoadmapWS = ({ amount, style }) => {
 
 	}
 
-
+	let horizontal = type === 'horizontal' ? 'horizontal' : '';
 
 	return (
 		<div ref={ref}
 			style={style ? style : {}}
-			className="like-block"
+			className={`like-block ${horizontal}`}
 			onClick={e => { onLikeClickHandler(e) }}
 		>
 			<LikeIcon />
 			<span >{amountValue}</span>
+			{horizontal && <span >likes</span>}
 		</div>
 	)
 }
