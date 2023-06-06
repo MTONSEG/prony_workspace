@@ -5,6 +5,7 @@ import './Main.scss';
 const Workspace = React.lazy(() => import('./Workspace/Workspace.jsx'));
 const Board = React.lazy(() => import('./Board/Board.jsx'));
 const Post = React.lazy(() => import('./Post/Post.jsx'));
+const Changelog = React.lazy(() => import('./Changelog/Changelog.jsx'));
 
 const Main = () => {
 	return (
@@ -15,6 +16,7 @@ const Main = () => {
 						<Route path='/' element={<Workspace />} />
 						<Route path='/board' element={<Board />} />
 						<Route path='/post' element={<Post />} />
+						<Route path='/changelog' element={<Changelog />} />
 					</Routes>
 				</React.Suspense>
 			</div>

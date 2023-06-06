@@ -59,6 +59,12 @@
 
 .select {
 	cursor: pointer;
+	&__header,
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
 	&__header {
 		position: relative;
 		z-index: 2;
@@ -87,6 +93,12 @@
 			background: #E5ECF9;
 		}
 	}
+	&__item-label {
+		display: block;
+		width: 5px;
+		height: 5px;
+		border-radius: 100%;
+	}
 	&__icon {
 		position: absolute;
 		top: 50%;
@@ -112,7 +124,6 @@
 		letter-spacing: 0.08px;
 		color: #7791C2;
 		font-weight: 400;
-		color: rgb(230, 237, 250);
 	}
 }
 

@@ -406,7 +406,6 @@ export const boardScreen = {
 		},
 	]
 }
-
 export const postScreen = {
 	voters: {
 		title: 'Voters:',
@@ -532,6 +531,137 @@ export const postScreen = {
 			amountLikes: 3,
 			date: '01-02-2020',
 			privacy: false,
+		},
+	]
+}
+
+export const changelogScreen = {
+	filter: {
+		title: 'Status:',
+		list: [1, 2, 3],
+		list: [
+			{
+				id: v1(),
+				title: 'All entries',
+				labelBg: '#CDDAF2'
+			},
+			{
+				id: v1(),
+				title: 'New',
+				labelBg: '#27AE60'
+			},
+			{
+				id: v1(),
+				title: 'Improved',
+				labelBg: '#1565C0'
+			},
+			{
+				id: v1(),
+				title: 'Fixed',
+				labelBg: '#F43658'
+			},
+		]
+	},
+	list: [
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment5,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment1,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment2,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'Improved',
+			labelBg: '#1565C0',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment4,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment1,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment3,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment5,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment4,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'Fixed',
+			labelBg: '#F43658',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment3,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
+		},
+		{
+			id: v1(),
+			title: 'Test record',
+			labelTitle: 'New',
+			labelBg: '#27AE60',
+			name: 'John Doe',
+			date: '01-02-2020',
+			photo: images.posts.postComment2,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
 		},
 	]
 }
