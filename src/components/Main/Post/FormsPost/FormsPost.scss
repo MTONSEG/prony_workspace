@@ -1,10 +1,17 @@
-.view-posts {
-	&__title {
-		margin: 0 0 16px;
+.form-post {
+	border-bottom: 1px solid #E5ECF9;
+	&__upload,
+	&__upload-right,
+	&__radios {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
-	&__body {
-		background: #FFFFFF;
-		box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.05);
-		border-radius: 10px;
+	&__upload {
+		margin: 0 0 29px;
+	}
+	&__radios {
+		gap: 19px;
+		margin: 0 31px 0 0;
 	}
 }

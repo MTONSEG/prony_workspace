@@ -462,6 +462,21 @@ export const postScreen = {
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus. Vel aliquam diam sit odio. Elit sed orci, bibendum sit. Nunc, penatibus blandit faucibus tristique vulputate tincidunt. Lorem sit egestas bibendum consectetur nisi, nunc. Dignissim non eget nisl ultrices dui aliquet. Porttitor ridiculus orci diam at. Tempus in auctor rutrum diam lobortis tempus non egestas rhoncus.',
 
 	},
+	privacy: {
+		title: 'Privacy',
+		list: [
+			{
+				id: v1(),
+				title: 'Public',
+				value: 'public',
+			},
+			{
+				id: v1(),
+				title: 'Private',
+				value: 'private',
+			},
+		]
+	},
 	messages: [
 		{
 			id: v1(),

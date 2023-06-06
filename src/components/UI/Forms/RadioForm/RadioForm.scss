@@ -1,0 +1,48 @@
+.radio {
+	cursor: pointer;
+	position: relative;
+	&__custom,
+	&__custom::after {
+		transition: all .2s;
+	}
+	&__custom {
+		width: 20px;
+		height: 20px;
+		background: #fff;
+		border: 2px solid rgba(1, 1, 1, 0.54);
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 100%;
+		&::after {
+			content: "";
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 3px solid #fff;
+			background: #1565C0;
+			border-radius: 100%;
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+	&__body {
+		padding: 0 0 0 35px;
+	}
+	&__input {
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		&:checked + .radio__custom {
+			background: #fff;
+			border-color: #1565C0;
+			&::after {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+}
