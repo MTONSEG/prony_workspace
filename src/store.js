@@ -1,9 +1,25 @@
 import { v1 } from 'uuid';
 import avatarHeader from './assets/images/header_avatar.jpg';
+import postImage from './assets/images/post_image.jpg';
+import postPhoto from './assets/images/post_avatar.jpg';
+import postComment1 from './assets/images/post_comment-1.jpg';
+import postComment2 from './assets/images/post_comment-2.jpg';
+import postComment3 from './assets/images/post_comment-3.jpg';
+import postComment4 from './assets/images/post_comment-4.jpg';
+import postComment5 from './assets/images/post_comment-5.jpg';
 
 const images = {
 	header: {
 		image: avatarHeader
+	},
+	posts: {
+		postImage: postImage,
+		postPhoto: postPhoto,
+		postComment1: postComment1,
+		postComment2: postComment2,
+		postComment3: postComment3,
+		postComment4: postComment4,
+		postComment5: postComment5,
 	}
 }
 
@@ -392,50 +408,64 @@ export const boardScreen = {
 }
 
 export const postScreen = {
-	title: 'Post view',
-	viewPost: {
-		name: 'Ross Gillespie',
-		photo: images.posts.postPhoto1,
-		title: 'Send status updates back through Intercom',
+	voters: {
+		title: 'Voters:',
+		more: '+12',
+		list: [
+			{
+				id: v1(),
+				image: images.posts.postComment1
+			},
+			{
+				id: v1(),
+				image: images.posts.postComment2
+			},
+			{
+				id: v1(),
+				image: images.posts.postComment3
+			},
+			{
+				id: v1(),
+				image: images.posts.postComment4
+			},
+			{
+				id: v1(),
+				image: images.posts.postComment5
+			},
+			{
+				id: v1(),
+				image: images.posts.postComment3
+			},
+		]
+	},
+	post: {
+		photo: images.posts.postPhoto,
+		image: images.posts.postImage,
+		name: 'John Doe',
 		time: '3 min ago',
+		likes: 23,
 		status: 'Complete',
-		text: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
-		image: images.postView.imagePostView,
-		amountLikes: '24',
-		tags: [
+		comments: '12 Comments',
+		tagList: [
 			{
-				title: 'Tagname1',
+				id: v1(),
 				color: '#EB5757',
+				title: 'Tagname1',
 			},
 			{
-				title: 'Tagname2',
+				id: v1(),
 				color: '#27AE60',
-			},
+				title: 'Tagname1',
+			}
 		],
-		placeholder: 'Enter detailes',
-		upload: {
-			title: 'Image',
-			image: images.createPost.uploadedImage,
-		},
-		privacy: {
-			title: 'Privacy',
-			list: [
-				{
-					title: 'Public',
-					value: 'public'
-				},
-				{
-					title: 'Private',
-					value: 'private'
-				},
-			]
-		},
-		sortList: ['Recent', 'Private', 'Public']
+		title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus. Vel aliquam diam sit odio. Elit sed orci, bibendum sit. Nunc, penatibus blandit faucibus tristique vulputate tincidunt. Lorem sit egestas bibendum consectetur nisi, nunc. Dignissim non eget nisl ultrices dui aliquet. Porttitor ridiculus orci diam at. Tempus in auctor rutrum diam lobortis tempus non egestas rhoncus.',
+
 	},
 	messages: [
 		{
 			id: v1(),
-			photo: images.postView.commentPhoto1,
+			photo: images.posts.postComment1,
 			name: 'Sophia-Rose Nava',
 			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			amountLikes: 3,
@@ -444,7 +474,7 @@ export const postScreen = {
 		},
 		{
 			id: v1(),
-			photo: images.postView.commentPhoto2,
+			photo: images.posts.postComment2,
 			name: 'Anna Walley',
 			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			amountLikes: 3,
@@ -452,7 +482,7 @@ export const postScreen = {
 			privacy: false,
 			reply: [{
 				id: v1(),
-				photo: images.postView.commentPhoto5,
+				photo: images.posts.postComment3,
 				name: 'Uzair Valdez',
 				message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 				amountLikes: 3,
@@ -462,7 +492,7 @@ export const postScreen = {
 		},
 		{
 			id: v1(),
-			photo: images.postView.commentPhoto3,
+			photo: images.posts.postComment4,
 			name: 'Kaylan Graham',
 			amountLikes: 3,
 			date: '01-02-2020',
@@ -470,7 +500,7 @@ export const postScreen = {
 			merge: [
 				{
 					id: v1(),
-					photo: images.postView.commentPhoto6,
+					photo: images.posts.postComment1,
 					name: 'Anna Walley',
 					message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 					amountLikes: 3,
@@ -481,13 +511,12 @@ export const postScreen = {
 		},
 		{
 			id: v1(),
-			photo: images.postView.commentPhoto4,
+			photo: images.posts.postComment5,
 			name: 'Kasim Daniels',
 			message: 'Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom Instead of send updates via email, send them through the original conversation on Intercom',
 			amountLikes: 3,
 			date: '01-02-2020',
 			privacy: false,
-			image: images.postView.commentImage
 		},
 	]
 }

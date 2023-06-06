@@ -1,0 +1,69 @@
+.body-post {
+	&__header,
+	&__footer,
+	&__tag-list,
+	&__comments {
+		display: flex;
+		align-items: center;
+	}
+	&__header {
+		position: relative;
+		padding: 9px 0 9px 40px;
+		margin: 0 0 12px;
+		svg {
+			width: 18.33px;
+			height: 16.67px;
+		}
+	}
+	&__footer,
+	&__tag-list {
+		gap: 18px;
+	}
+
+	&__photo {
+		width: 34px;
+		height: 34px;
+		border-radius: 100%;
+		margin: 0 16px 0 0;
+	}
+	&__name {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+		margin: 0 13px 0 0;
+	}
+	&__time {
+		font-size: 12px;
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		color: #7791C2;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 128.5%;
+		margin: 0 0 21px;
+	}
+	&__text {
+		line-height: 128.5%;
+		margin: 0 0 15px;
+	}
+	&__image {
+		width: 205px;
+		height: 145px;
+		margin: 0 0 20px;
+	}
+	&__comments {
+		gap: 6px;
+	}
+	&__comments {
+		fill: #E5ECF9;
+	}
+	&__comments-value {
+		font-size: 11px;
+		line-height: 16px;
+		letter-spacing: 0.06px;
+		color: #7791C2;
+	}
+}
