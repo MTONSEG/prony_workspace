@@ -7,6 +7,7 @@ import postComment2 from './assets/images/post_comment-2.jpg';
 import postComment3 from './assets/images/post_comment-3.jpg';
 import postComment4 from './assets/images/post_comment-4.jpg';
 import postComment5 from './assets/images/post_comment-5.jpg';
+import avatar from './assets/images/avatar.jpg';
 
 const images = {
 	header: {
@@ -20,9 +21,11 @@ const images = {
 		postComment3: postComment3,
 		postComment4: postComment4,
 		postComment5: postComment5,
+	},
+	forms: {
+		avatar: avatar,
 	}
 }
-
 export const header = {
 	board: 'Boards',
 	changelog: 'Changelog',
@@ -534,7 +537,6 @@ export const postScreen = {
 		},
 	]
 }
-
 export const changelogScreen = {
 	filter: {
 		title: 'Status:',
@@ -664,6 +666,79 @@ export const changelogScreen = {
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id quisque magna massa ullamcorper. Vitae justo, fusce viverra arcu enim varius suscipit diam tellus.'
 		},
 	]
+}
+export const formData = {
+	changePass: {
+		title: 'Change password',
+		current: {
+			title: 'Current password',
+			ph: 'Enter current password',
+			type: 'password'
+		},
+		new: {
+			title: 'New Password',
+			ph: 'Enter new password',
+			type: 'password'
+		},
+		repeat: {
+			title: 'Repeat New Password',
+			ph: 'Enter new password',
+			type: 'password'
+		},
+	},
+	resetPass: {
+		title: 'Reset password',
+		subtitle: ' Forgot your password? Enter your email address below, and we\'ll email you instructions to set a new one.',
+		input: {
+			title: 'Your email',
+			ph: 'Enter your email',
+			type: 'email'
+		},
+	},
+	newPass: {
+		title: 'New password',
+		new: {
+			title: 'New Password',
+			ph: 'Enter your password',
+			type: 'password'
+		},
+		repeat: {
+			title: 'Confirm password',
+			ph: 'Enter your password',
+			type: 'password'
+		},
+	},
+	profile: {
+		title: 'Profile',
+		current: {
+			title: 'First name',
+			ph: 'Enter your first name'
+		},
+		new: {
+			title: 'Last name',
+			ph: 'Enter your last name'
+		},
+		repeat: {
+			title: 'Email',
+			ph: 'Enter your email',
+			type: 'email'
+		},
+	},
+	avatar: {
+		title: 'Avatar',
+		photo: images.forms.avatar,
+		subtitle: 'Current avatar'
+	},
+	login: {
+		login: {
+			title: 'Your login',
+			ph: 'Enter your login',
+		},
+		pass: {
+			title: 'Your paeeword',
+			ph: 'Enter your password',
+		},
+	}
 }
 export const store = {
 	header: header,

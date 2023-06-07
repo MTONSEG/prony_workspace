@@ -1,7 +1,6 @@
 .input,
 .select,
 .textarea {
-	font-size: 12px;
 	line-height: 21px;
 	letter-spacing: 0.08px;
 	color: #272557;
@@ -16,7 +15,7 @@
 	position: relative;
 }
 
-.input,
+.input.small,
 .select__header,
 .select__item {
 	padding: 6px 14px;
@@ -24,8 +23,10 @@
 
 .input,
 .textarea {
+	font-size: 14px;
 	display: block;
 	width: 100%;
+	padding: 8px 22px;
 	&::placeholder {
 		color: #CDDAF2;
 	}
@@ -35,6 +36,31 @@
 	&:focus {
 		outline-color: #E5ECF9;
 		border-color: #1565C0;
+	}
+}
+.input-wrap {
+	position: relative;
+}
+.input {
+	line-height: 26px;
+	letter-spacing: -0.22px;
+	&__view-btn {
+		background: url('../../../assets/icons/eye-close.svg') center/contain no-repeat;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		right: 14px;
+		transform: translateY(-50%);
+		transition: none;
+		&.view {
+			background-image: url('../../../assets/icons/eye.svg');
+		}
+	}
+	&.small {
+		font-size: 12px;
+		line-height: 21px;
 	}
 }
 
@@ -160,6 +186,39 @@
 		gap: 10px;
 		span {
 			color: #1565C0;
+		}
+	}
+}
+
+.input-container {
+	padding: 0 0 22px;
+	position: relative;
+	&__title {
+		font-size: 12px;
+		line-height: 21px;
+		letter-spacing: 0.08px;
+		margin: 0 0 11px;
+		font-weight: 400;
+	}
+	&__error {
+		position: absolute;
+		top: calc(100% - 16px);
+		left: 0;
+		font-size: 10px;
+		letter-spacing: -0.22px;
+		color: #F43658;
+	}
+
+	&.error {
+		& .input-container__error {
+			display: block;
+		}
+		& .input{
+			border-color: #F43658;
+			color: #F43658;
+			&::placeholder {
+				color: #F43658;
+			}
 		}
 	}
 }

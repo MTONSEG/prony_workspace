@@ -7,7 +7,8 @@ const InputForm = ({
 	name,
 	value,
 	setValue,
-	style
+	style,
+	error
 }) => {
 
 	const onInputChangeHandler = e => { setValue(e.currentTarget.value) }
@@ -16,7 +17,7 @@ const InputForm = ({
 		<>
 			<input
 				style={style ? style : {}}
-				className='input'
+				className={`input small ${error ? 'error' : ''}`}
 				type={type ? type : 'text'}
 				placeholder={ph ? ph : ''}
 				name={name ? name : ''}
