@@ -17,25 +17,25 @@ const Forms = () => {
 		<div className='form'>
 			<Routes>
 				<Route path='change-pass' element={
-					<ChangePassword state={state.changePass}/>
+					<ChangePassword state={state.changePass} />
 				} />
 				<Route path='reset-pass' element={
-					<ResetPassword state={state.resetPass}/>
+					<ResetPassword state={state.resetPass} />
 				} />
 				<Route path='new-pass' element={
-					<NewPassword state={state.newPass}/>
+					<NewPassword state={state.newPass} />
 				} />
 				<Route path='profile' element={
-					<Profile state={state.profile}/>
+					<Profile state={state.profile} />
 				} />
 				<Route path='avatar' element={
-					<AvatarScreen state={state}/>
+					<AvatarScreen state={state.avatar} />
 				} />
 				<Route path='login' element={
-					<Login state={state}/>
+					<Login state={state.login} soc={state.social} />
 				} />
 				<Route path='registration' element={
-					<Registration state={state}/>
+					<Registration state={state.reg} soc={state.social} />
 				} />
 			</Routes>
 		</div>

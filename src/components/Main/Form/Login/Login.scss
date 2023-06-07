@@ -1,5 +1,13 @@
-.board {
-	display: flex;
-	align-items: flex-start;
-	gap: 24px;
+.login {
+	&__checkbox {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	&__create-btn {
+		display: flex;
+		font-size: 12px;
+		line-height: 45px;
+		gap: 5px;
+	}
 }

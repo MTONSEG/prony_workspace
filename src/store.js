@@ -8,6 +8,11 @@ import postComment3 from './assets/images/post_comment-3.jpg';
 import postComment4 from './assets/images/post_comment-4.jpg';
 import postComment5 from './assets/images/post_comment-5.jpg';
 import avatar from './assets/images/avatar.jpg';
+import iconGoogle from './assets/icons/google.svg';
+import iconGithub from './assets/icons/github.svg';
+import iconFacebook from './assets/icons/facebook.svg';
+import iconDiscord from './assets/icons/discord.svg';
+import iconTwitter from './assets/icons/twitter-color.svg';
 
 const images = {
 	header: {
@@ -735,9 +740,67 @@ export const formData = {
 			ph: 'Enter your login',
 		},
 		pass: {
-			title: 'Your paeeword',
+			title: 'Your password',
 			ph: 'Enter your password',
+			type: 'password'
 		},
+	},
+	reg: {
+		name: {
+			title: 'Your name',
+			ph: 'Enter your name',
+			type: 'text'
+		},
+		lastName: {
+			title: 'Your last name',
+			ph: 'Enter your last name',
+			type: 'text'
+		},
+		email: {
+			title: 'Your email',
+			ph: 'Enter your email',
+			type: 'email'
+		},
+		newPass: {
+			title: 'Your password',
+			ph: 'Enter your password',
+			type: 'password'
+		},
+		repeatPass: {
+			title: 'Confirm password',
+			ph: 'Enter your password',
+			type: 'password'
+		},
+	},
+	social: {
+		title: 'Or login with social:',
+		list: [
+			{
+				id: v1(),
+				title: 'Login with Google',
+				icon: iconGoogle,
+			},
+			{
+				id: v1(),
+				title: 'Login with Github',
+				icon: iconGithub,
+			},
+			{
+				id: v1(),
+				title: 'Login with Facebook',
+				icon: iconFacebook,
+			},
+			{
+				id: v1(),
+				title: 'Login with Discord',
+				icon: iconDiscord,
+			},
+			{
+				id: v1(),
+				title: 'Login with Twitter',
+				icon: iconTwitter,
+			},
+		]
 	}
 }
 export const store = {

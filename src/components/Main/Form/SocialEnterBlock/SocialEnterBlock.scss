@@ -1,0 +1,15 @@
+.social-enter {
+	&__title {
+		font-size: 18px;
+		line-height: 45px;
+		letter-spacing: -0.22px;
+		margin: 0 0 20px;
+		text-align: center;
+		font-weight: 400;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		gap: 16px 63px;
+	}
+}

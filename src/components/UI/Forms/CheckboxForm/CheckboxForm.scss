@@ -1,20 +1,24 @@
 .checkbox {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 15px;
 	cursor: pointer;
+	padding: 0 0 0 30px;
+	position: relative;
 	&__custom,
 	&__custom::after {
 		transition: all .2s;
 	}
 	&__custom {
-		flex: 0 0 18px;
+		width: 18px;
 		height: 18px;
 		background: #fff;
 		border: 2px solid #BEBECD;
 		border-radius: 3px;
 		overflow: hidden;
-		position: relative;
+		position: absolute;
+		top: 4px;
+		left: 0;
 	}
 	&__input {
 		opacity: 0;

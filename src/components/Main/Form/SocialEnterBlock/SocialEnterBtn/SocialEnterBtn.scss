@@ -1,0 +1,22 @@
+.social-enter-btn {
+	border: 1px solid #E5ECF9;
+	border-radius: 7px;
+	background: #fff;
+	outline: 3px solid #F5F8FD;
+	padding: 9px 16px 8px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	&:hover {
+		outline-color: rgba(186, 195, 206, 0.365);
+	}
+	&__icon {
+		width: 24px;
+		height: 24px;
+	}
+	&__text {
+		line-height: 26px;
+		letter-spacing: -0.22px;
+		color: #272557;
+	}
+}
