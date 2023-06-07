@@ -34,7 +34,7 @@ const Forms = () => {
 				<Route path='login' element={
 					<Login state={state.login} soc={state.social} />
 				} />
-				<Route path='registration' element={
+				<Route path='reg' element={
 					<Registration state={state.reg} soc={state.social} />
 				} />
 			</Routes>

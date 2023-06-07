@@ -746,6 +746,7 @@ export const formData = {
 		},
 	},
 	reg: {
+		title: 'User registration',
 		name: {
 			title: 'Your name',
 			ph: 'Enter your name',
