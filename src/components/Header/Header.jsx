@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BoardsIcon, ChangelogIcon, LoginIcon, LogoIcon } from "../UI/SVGIcons/SVGIcons";
+import { userMenu } from "../../store";
 import './Header.scss';
+import PopupUserMenu from "./PopupUserMenu/PopupUserMenu";
+import UserHeader from "./UserHeader/UserHeader";
 
 const Header = ({ state }) => {
+	const [userState, setUserState] = useState(userMenu)
+	const [login, setLogin] = useState(true);
+	const [activePopup, setActivePopup] = useState(false);
+
+	const onLogInOutClickHandler = () => { setLogin(!login) };
+	const onMenuBtnClickHandler = () => { setActivePopup(!activePopup) };
+
 	return (
 		<header className='header'>
 			<div className="container">
@@ -20,11 +30,25 @@ const Header = ({ state }) => {
 							<ChangelogIcon />
 							<span className='header__text-link'>{state.changelog}</span>
 						</Link>
-						<Link className='header__link'>
-							<LoginIcon />
-							<span className='header__text-link'>{state.login.title}</span>
-						</Link>
+						{login
+							? <UserHeader
+								name={userState.name}
+								photo={userState.photo}
+								onMenuBtnClick={onMenuBtnClickHandler}
+							/>
+							: <>
+								<Link className='header__link'
+									onClick={onLogInOutClickHandler}>
+									<LoginIcon />
+									<span className='header__text-link'>{state.login.title}</span>
+								</Link>
+							</>}
 					</nav>
+					<PopupUserMenu
+						list={userState.list}
+						active={activePopup}
+						onOutClickHandler={onLogInOutClickHandler}
+						closePopupHandler={onMenuBtnClickHandler} />
 				</div>
 			</div>
 		</header>

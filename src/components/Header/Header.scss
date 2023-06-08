@@ -2,6 +2,8 @@
 	background: #fff;
 	border-top: 2px solid #1565C0;
 	border-bottom: 3px solid #F8FAFF;
+	position: relative;
+	z-index: 4;
 	&__row,
 	&__nav,
 	&__link {
@@ -11,6 +13,7 @@
 	}
 	&__row {
 		padding: 23px 0 24px;
+		position: relative;
 	}
 	&__nav {
 		gap: 40px;

@@ -1,0 +1,30 @@
+.user {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0 30px 0 0;
+	&__avatar {
+		flex: 0 0 40px;
+		height: 40px;
+		border-radius: 100%;
+		margin: 0 20px 0 0;
+	}
+	&__name {
+		font-weight: 500;
+		line-height: 20px;
+		letter-spacing: 0.06px;
+	}
+	&__menu-btn {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		right: -10px;
+		padding: 3px 10px;
+		fill: #7791C2;
+		border-radius: 100%;
+		&:hover {
+			fill: #1565C0;
+		}
+	}
+}

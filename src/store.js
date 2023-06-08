@@ -13,6 +13,7 @@ import iconGithub from './assets/icons/github.svg';
 import iconFacebook from './assets/icons/facebook.svg';
 import iconDiscord from './assets/icons/discord.svg';
 import iconTwitter from './assets/icons/twitter-color.svg';
+import pic404 from './assets/icons/404.svg';
 
 const images = {
 	header: {
@@ -804,6 +805,43 @@ export const formData = {
 		]
 	}
 }
+export const notFoundPage = {
+	title: 'something wrong',
+	image: pic404,
+	text: 'This page is missing or you assembled the link incorrectly',
+	btn: {
+		title: 'To home page',
+		url: '/'
+	}
+}
+export const userMenu = {
+	photo: avatar,
+	name: 'Lucy Lavender',
+	list: [
+		{
+			id: v1(),
+			title: 'Change password',
+			url: '/form/change-pass',
+		},
+		{
+			id: v1(),
+			title: 'Profile',
+			url: '/form/profile',
+		},
+		{
+			id: v1(),
+			title: 'Avatar',
+			url: '/form/avatar',
+		},
+		{
+			id: v1(),
+			title: 'Logout',
+			type: 'logout',
+			url: '',
+		},
+	]
+}
+
 export const store = {
 	header: header,
 	footer: footer
