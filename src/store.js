@@ -889,6 +889,28 @@ export const navBar = {
 		]
 	},
 }
+export const mainClient = {
+	title: 'Workspaces',
+	titleBtn: 'Add a new workspace',
+	list: [
+		{
+			id: v1(),
+			name: 'Name of workspace',
+			subdomain: 'Subdomain_or_domain.com'
+		},
+		{
+			id: v1(),
+			name: 'Name of workspace',
+			subdomain: 'Subdomain_or_domain.com'
+		},
+		{
+			id: v1(),
+			name: 'Name of workspace',
+			subdomain: 'Subdomain_or_domain.com'
+		},
+	]
+
+}
 
 export const store = {
 	header: header,

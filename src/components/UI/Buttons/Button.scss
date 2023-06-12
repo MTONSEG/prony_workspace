@@ -9,6 +9,8 @@
 	letter-spacing: 0.06px;
 	color: #FFFFFF;
 	width: max-content;
+	position: relative;
+	text-align: center;
 	&:hover {
 		box-shadow: 0 5px 20px rgba(21, 101, 192, 0.432);
 	}

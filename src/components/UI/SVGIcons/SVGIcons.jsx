@@ -115,3 +115,22 @@ export const MenuBtnIcon = props => (
 	</svg>
 
 )
+export const PlayIcon = props => (
+	<svg width="16" height="19" viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+		<path d="M16 9.50004L-7.57102e-07 18.1603L0 0.839745L16 9.50004Z" fill="#6FCF97" />
+	</svg>
+)
+export const PlusIcon = props => (
+	<svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+		<rect x="6.78571" width="1.42857" height="15" fill="white" />
+		<rect y="8.21429" width="1.42857" height="15" transform="rotate(-90 0 8.21429)" fill="white" />
+	</svg>
+)
+export const EditIcon = props => (
+	<svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.5 11.875V15H3.625L12.8458 5.77916L9.72083 2.65416L0.5 11.875ZM15.2542 3.37083C15.5792 3.04583 15.5792 2.51666 15.2542 2.19166L13.3083 0.245825C12.9833 -0.0791748 12.4542 -0.0791748 12.1292 0.245825L10.6042 1.77083L13.7292 4.89583L15.2542 3.37083Z" />
+	</svg>
+)
+
+
+

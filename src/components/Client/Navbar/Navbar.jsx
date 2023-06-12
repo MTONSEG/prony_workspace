@@ -18,7 +18,7 @@ const Navbar = props => {
 				</h2>
 				<ul className="navbar__list">
 					{state.profile.list.map(el => (
-						<li className="navbar__item">
+						<li className="navbar__item" key={el.id}>
 							<Link to={el.link} className="navbar__link">
 								{el.title}
 							</Link>
@@ -30,7 +30,7 @@ const Navbar = props => {
 				</h2>
 				<ul className="navbar__list">
 					{state.billing.list.map(el => (
-						<li className="navbar__item">
+						<li className="navbar__item" key={el.id}>
 							<Link to={el.link} className="navbar__link">
 								{el.title}
 							</Link>
