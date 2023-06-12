@@ -5,6 +5,7 @@ import { userMenu } from "../../store";
 import './Header.scss';
 import PopupUserMenu from "./PopupUserMenu/PopupUserMenu";
 import UserHeader from "./UserHeader/UserHeader";
+import { Breadcrumb } from "rsuite";
 
 const Header = ({ state }) => {
 	const [userState, setUserState] = useState(userMenu)
@@ -51,6 +52,7 @@ const Header = ({ state }) => {
 						closePopupHandler={onMenuBtnClickHandler} />
 				</div>
 			</div>
+			<Breadcrumb/>
 		</header>
 	)
 }

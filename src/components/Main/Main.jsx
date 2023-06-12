@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import './Main.scss';
-// import PageNotFound from "./PageNotFound/PageNotFound";
 
 const Workspace = React.lazy(() => import('./Workspace/Workspace.jsx'));
 const Board = React.lazy(() => import('./Board/Board.jsx'));

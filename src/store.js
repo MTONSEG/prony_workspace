@@ -841,6 +841,54 @@ export const userMenu = {
 		},
 	]
 }
+export const navBar = {
+	title: 'Workspaces',
+	profile: {
+		title: 'Profile',
+		list: [
+			{
+				id: v1(),
+				title: 'Profile',
+				link: ''
+			},
+			{
+				id: v1(),
+				title: 'Avatar',
+				link: ''
+			},
+			{
+				id: v1(),
+				title: 'Email Preferences',
+				link: ''
+			},
+			{
+				id: v1(),
+				title: 'Change password',
+				link: ''
+			},
+		]
+	},
+	billing: {
+		title: 'Billing',
+		list: [
+			{
+				id: v1(),
+				title: 'Billing Plan',
+				link: ''
+			},
+			{
+				id: v1(),
+				title: 'Payment Methods',
+				link: ''
+			},
+			{
+				id: v1(),
+				title: 'Billing History',
+				link: ''
+			},
+		]
+	},
+}
 
 export const store = {
 	header: header,
