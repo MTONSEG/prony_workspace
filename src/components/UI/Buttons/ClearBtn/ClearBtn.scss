@@ -6,6 +6,10 @@
 	text-decoration: underline;
 	width: 100%;
 	display: block;
+	&.blue {
+		color: #1565C0;
+		width: max-content;
+	}
 	&:hover {
 		text-decoration: none;
 	}

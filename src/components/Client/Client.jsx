@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Breadcrumbs from "../UI/Breadcrumbs/Breadcrumbs";
+import AddWorkspace from "./AddWorkspace/AddWorkspace";
 import './Client.scss';
+import EditWorkspace from "./EditWorkspace/EditWorkspace";
 import MainClient from "./MainClient/MainClient";
 import Navbar from "./Navbar/Navbar";
 
@@ -15,6 +17,8 @@ const Client = props => {
 					<main className="client__body">
 						<Routes>
 							<Route path='/' element={<MainClient />} />
+							<Route path='/edit' element={<EditWorkspace />} />
+							<Route path='/add' element={<AddWorkspace />} />
 						</Routes>
 					</main>
 				</div>

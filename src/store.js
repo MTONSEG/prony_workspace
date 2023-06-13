@@ -14,6 +14,9 @@ import iconFacebook from './assets/icons/facebook.svg';
 import iconDiscord from './assets/icons/discord.svg';
 import iconTwitter from './assets/icons/twitter-color.svg';
 import pic404 from './assets/icons/404.svg';
+import deFlag from './assets/icons/german.svg';
+import usaFlag from './assets/icons/usa.svg';
+import customThemeIcon from './assets/icons/setting.svg';
 
 const images = {
 	header: {
@@ -910,6 +913,104 @@ export const mainClient = {
 		},
 	]
 
+}
+export const editWs = {
+	title: 'Edit Workspace',
+	name: {
+		id: v1(),
+		title: 'New Name',
+		ph: 'Name of workspace'
+	},
+	domain: {
+		id: v1(),
+		title: 'Subdomain',
+		ph: 'Name of workspace'
+	},
+}
+
+export const addWs = {
+	title: 'Add Workspace',
+	lang: {
+		title: 'Language',
+		list: [
+			{
+				id: v1(),
+				title: 'English',
+				text: 'English, US',
+				value: 'eng1',
+				icon: usaFlag,
+			},
+			{
+				id: v1(),
+				title: 'German',
+				text: 'German, EU',
+				value: 'de1',
+				icon: deFlag,
+			},
+			{
+				id: v1(),
+				title: 'English',
+				text: 'English, US',
+				value: 'eng2',
+				icon: usaFlag,
+			},
+			{
+				id: v1(),
+				title: 'German',
+				text: 'German, EU',
+				value: 'de2',
+				icon: deFlag,
+			},
+			{
+				id: v1(),
+				title: 'English',
+				text: 'English, US',
+				value: 'eng3',
+				icon: usaFlag,
+			},
+			{
+				id: v1(),
+				title: 'German',
+				text: 'German, EU',
+				value: 'de3',
+				icon: deFlag,
+			},
+		]
+	},
+	theme: {
+		title: 'Theme',
+		list: [
+			{
+				id: v1(),
+				type: 'custom',
+				bg: 'linear-gradient(244.56deg, #E0EBFF 16.12%, #CADDFF 83.88%)',
+				icon: customThemeIcon,
+				name: 'custom',
+				clicked: false
+			},
+			{
+				id: v1(),
+				bg: '#1565C0',
+				colors: ['#272557', '#7791C2', '#1565C0', '#E5ECF9'],
+				name: 'theme1',
+				clicked: true
+			},
+			{
+				id: v1(),
+				bg: '#46EBA8',
+				colors: ['#46EBA8', '#333333', '#ACACAC', '#D8D8D8'],
+				name: 'theme2',
+				clicked: false
+			},
+			{
+				id: v1(),
+				bg: 'linear-gradient(89.88deg, #C4CFE2 2.43%, #E5ECF9 110.51%)',
+				colors: ['#272557', '#7791C2', '#1565C0', '#E5ECF9'],
+				name: 'theme3',
+				clicked: false
+			},
+		]
+	}
 }
 
 export const store = {

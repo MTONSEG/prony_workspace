@@ -1,9 +1,9 @@
 import React from 'react';
 import './ButtonWrapperForm.scss';
 
-const ButtonWrapperForm = ({ children, style }) => {
+const ButtonWrapperForm = ({ children, style, client }) => {
 	return (
-		<div className='button-wrap' style={style}>
+		<div className={`button-wrap ${client ? 'client':''}`} style={style}>
 			{children}
 		</div>
 	);
