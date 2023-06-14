@@ -927,7 +927,6 @@ export const editWs = {
 		ph: 'Name of workspace'
 	},
 }
-
 export const addWs = {
 	title: 'Add Workspace',
 	lang: {
@@ -1032,7 +1031,6 @@ export const addWs = {
 		]
 	}
 }
-
 export const delWs = {
 	title: 'DELETE Workspace',
 	subtitle: 'Are you sure? This action cannot be undone. Enter the name of this workspace below to confirm.',
@@ -1040,6 +1038,24 @@ export const delWs = {
 		title: 'Workspace name',
 		ph: 'Name of workspace'
 	}
+}
+export const changePassWs = {
+	title: 'Change password',
+	current: {
+		title: 'Current password',
+		ph: 'Enter current password',
+		type: 'password'
+	},
+	new: {
+		title: 'New Password',
+		ph: 'Enter new password',
+		type: 'password'
+	},
+	repeatNew: {
+		title: 'Repeat New Password',
+		ph: 'Enter new password',
+		type: 'password'
+	},
 }
 
 export const store = {

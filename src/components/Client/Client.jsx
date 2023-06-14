@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Breadcrumbs from "../UI/Breadcrumbs/Breadcrumbs";
 import AddWorkspace from "./AddWorkspace/AddWorkspace";
+import ChangePassWorkspace from "./ChangePassWorkspace/ChangePassWorkspace";
 import './Client.scss';
 import DeleteWorkspace from "./DeleteWorkspace/DeleteWorkspace";
 import EditWorkspace from "./EditWorkspace/EditWorkspace";
@@ -21,6 +22,7 @@ const Client = props => {
 							<Route path='/edit' element={<EditWorkspace />} />
 							<Route path='/add' element={<AddWorkspace />} />
 							<Route path='/del' element={<DeleteWorkspace />} />
+							<Route path='/change-pass' element={<ChangePassWorkspace />} />
 						</Routes>
 					</main>
 				</div>
