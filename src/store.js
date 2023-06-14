@@ -1057,6 +1057,41 @@ export const changePassWs = {
 		type: 'password'
 	},
 }
+export const socWs = {
+	title: 'Social accounts',
+	list: [
+		{
+			id: v1(),
+			title: 'Add Google account',
+			icon: iconGoogle,
+			connected: false,
+		},
+		{
+			id: v1(),
+			title: 'Add Facebook account',
+			icon: iconFacebook,
+			connected: true,
+		},
+		{
+			id: v1(),
+			title: 'Add Twitter account',
+			icon: iconTwitter,
+			connected: false,
+		},
+		{
+			id: v1(),
+			title: 'Add Github account',
+			icon: iconGithub,
+			connected: false,
+		},
+		{
+			id: v1(),
+			title: 'Add Discord account',
+			icon: iconDiscord,
+			connected: false,
+		},
+	]
+}
 
 export const store = {
 	header: header,
