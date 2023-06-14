@@ -1010,6 +1010,26 @@ export const addWs = {
 				clicked: false
 			},
 		]
+	},
+	plan: {
+		title: 'How do you plan to use Prony?',
+		list: [
+			{
+				id: v1(),
+				title: 'Public feedback',
+				clicked: true,
+			},
+			{
+				id: v1(),
+				title: 'Private feedback',
+				clicked: false,
+			},
+			{
+				id: v1(),
+				title: 'Employee feedback',
+				clicked: false,
+			},
+		]
 	}
 }
 
