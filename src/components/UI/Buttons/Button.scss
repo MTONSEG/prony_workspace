@@ -12,6 +12,12 @@
 	position: relative;
 	text-align: center;
 	&:hover {
-		box-shadow: 0 5px 20px rgba(21, 101, 192, 0.432);
+		box-shadow: 0 5px 20px rgba(21, 101, 192, 0.4);
+	}
+	&.red {
+		background: #F43658;
+		&:hover {
+			box-shadow: 0 5px 20px rgba(244, 54, 89, 0.4);
+		}
 	}
 }

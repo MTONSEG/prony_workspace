@@ -1033,6 +1033,15 @@ export const addWs = {
 	}
 }
 
+export const delWs = {
+	title: 'DELETE Workspace',
+	subtitle: 'Are you sure? This action cannot be undone. Enter the name of this workspace below to confirm.',
+	name: {
+		title: 'Workspace name',
+		ph: 'Name of workspace'
+	}
+}
+
 export const store = {
 	header: header,
 	footer: footer
