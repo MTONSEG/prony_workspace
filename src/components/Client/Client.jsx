@@ -8,6 +8,7 @@ import DeleteWorkspace from "./DeleteWorkspace/DeleteWorkspace";
 import EditWorkspace from "./EditWorkspace/EditWorkspace";
 import MainClient from "./MainClient/MainClient";
 import Navbar from "./Navbar/Navbar";
+import ProfileClient from "./ProfileClient/ProfileClient";
 import SocialWorkspace from "./SocialWorkspace/SocialWorkspace";
 
 const Client = props => {
@@ -25,6 +26,7 @@ const Client = props => {
 							<Route path='/del' element={<DeleteWorkspace />} />
 							<Route path='/change-pass' element={<ChangePassWorkspace />} />
 							<Route path='/social' element={<SocialWorkspace />} />
+							<Route path='/profile' element={<ProfileClient />} />
 						</Routes>
 					</main>
 				</div>

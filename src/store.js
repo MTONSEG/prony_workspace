@@ -1092,7 +1092,22 @@ export const socWs = {
 		},
 	]
 }
-
+export const profileCl = {
+	title: 'Profile',
+	name: {
+		title: 'First name',
+		ph: 'Enter your first name',
+	},
+	lastName: {
+		title: 'Last name',
+		ph: 'Enter your last name',
+	},
+	email: {
+		title: 'Email',
+		ph: 'Enter your email',
+		type: 'email'
+	},
+}
 export const store = {
 	header: header,
 	footer: footer

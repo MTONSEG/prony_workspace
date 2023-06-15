@@ -25,6 +25,7 @@ const ChangePassWorkspace = () => {
 					name={state.current.title}
 					title={state.current.title}
 					ph={state.current.ph}
+					type={state.current.type}
 					value={currentPass}
 					setNameValue={setCurrentPass}
 				/>
@@ -32,13 +33,16 @@ const ChangePassWorkspace = () => {
 					name={state.new.title}
 					title={state.new.title}
 					ph={state.new.ph}
+					type={state.new.type}
 					value={newPass}
 					setNameValue={setNewPass}
 				/>
 				<InputFormContainer
+					style={{padding: 0}}
 					name={state.repeatNew.title}
 					title={state.repeatNew.title}
 					ph={state.repeatNew.ph}
+					type={state.repeatNew.type}
 					value={repeatNewPass}
 					setNameValue={setRepeatNewPass}
 				/>
