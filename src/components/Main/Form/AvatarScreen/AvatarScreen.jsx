@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BigTitle from "../../../UI/BigTitle/BigTitle";
+import BigTitleClient from "../../../UI/BigTitleClient/BigTitleClient";
 import Button from "../../../UI/Buttons/Button";
 import ButtonWrapperForm from "../../../UI/Buttons/ButtonWrapperForm/ButtonWrapperForm";
 import ClearBtn from "../../../UI/Buttons/ClearBtn/ClearBtn";
@@ -7,14 +8,27 @@ import UploadBlock from '../../../UI/UploadBlock/UploadBlock';
 import FormWrapper from "../FormWrapper/FormWrapper";
 import './AvatarScreen.scss';
 
-const AvatarScreen = ({ state }) => {
+const AvatarScreen = ({ state, client }) => {
 
 	return (
-		<div className='avatar'>
-			<BigTitle>
-				{state.title}
-			</BigTitle>
-			<FormWrapper >
+		<div className='avatar'
+			style={client
+				? {}
+				: {}
+			}
+		>
+
+			{
+				client
+					? <BigTitleClient>{state.title}</BigTitleClient>
+					: <BigTitle>{state.title}</BigTitle>
+			}
+
+			<FormWrapper
+				style={client
+					? { margin: 0,maxWidth: '537px'}
+					: {}
+				} >
 				<p className="avatar__subtitle">
 					{state.subtitle}
 				</p>
@@ -22,11 +36,18 @@ const AvatarScreen = ({ state }) => {
 					<img src={state.photo} alt={state.title} className="avatar__image" />
 					<UploadBlock />
 				</div>
-				<ButtonWrapperForm style={{
-					marginTop: '29px',
-					justifyContent: 'center',
-					gap: '28px'
-				}}>
+				<ButtonWrapperForm style={client
+					? {
+						marginTop: '29px',
+						justifyContent: 'flex-end',
+						gap: '28px'
+					}
+					: {
+						marginTop: '29px',
+						justifyContent: 'center',
+						gap: '28px'
+					}
+				}>
 					<ClearBtn
 						style={{
 							width: 'max-content',

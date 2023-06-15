@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import AvatarScreen from "../Main/Form/AvatarScreen/AvatarScreen";
 import Breadcrumbs from "../UI/Breadcrumbs/Breadcrumbs";
 import AddWorkspace from "./AddWorkspace/AddWorkspace";
 import ChangePassWorkspace from "./ChangePassWorkspace/ChangePassWorkspace";
@@ -10,6 +11,7 @@ import MainClient from "./MainClient/MainClient";
 import Navbar from "./Navbar/Navbar";
 import ProfileClient from "./ProfileClient/ProfileClient";
 import SocialWorkspace from "./SocialWorkspace/SocialWorkspace";
+import { formData } from "../../store";
 
 const Client = props => {
 	return (
@@ -27,6 +29,10 @@ const Client = props => {
 							<Route path='/change-pass' element={<ChangePassWorkspace />} />
 							<Route path='/social' element={<SocialWorkspace />} />
 							<Route path='/profile' element={<ProfileClient />} />
+							<Route path='/avatar' element={<AvatarScreen
+								state={formData.avatar}
+								client={true}
+							/>} />
 						</Routes>
 					</main>
 				</div>
