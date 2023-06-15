@@ -1108,6 +1108,63 @@ export const profileCl = {
 		type: 'email'
 	},
 }
+export const paymentFormCl = {
+	title: 'Add Payment Methods',
+	alias: {
+		title: 'Alias for credit card',
+		ph: 'Enter your Alias',
+	},
+	name: {
+		title: 'First name',
+		ph: 'Enter your first name',
+	},
+	lastName: {
+		title: 'Last name',
+		ph: 'Enter your last name',
+	},
+	card: {
+		title: 'Card number',
+		type: 'number'
+	},
+	cvv: {
+		title: 'CVV',
+		type: 'number'
+	},
+	date: {
+		title: 'Expiration date',
+		type: 'number'
+	},
+}
+
+export const paymentCl = {
+	title: 'Payment Methods',
+	titleAddBtn: 'Add a new payment method',
+	cardList: [
+		{
+			id: v1(),
+			title: 'Privatbank',
+			checked: true,
+			value: 'privatbank',
+			cardNum: '5784758475847584'
+		},
+		{
+			id: v1(),
+			title: 'Monobank',
+			checked: false,
+			value: 'monobank',
+			cardNum: '4758475845784758'
+		},
+		{
+			id: v1(),
+			title: 'A-bank',
+			checked: false,
+			value: 'abank',
+			cardNum: '4475784758485875'
+		},
+	],
+	form: paymentFormCl
+}
+
 export const store = {
 	header: header,
 	footer: footer

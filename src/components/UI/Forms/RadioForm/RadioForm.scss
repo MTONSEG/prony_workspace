@@ -45,4 +45,37 @@
 			}
 		}
 	}
+	&.pay {
+		background: #F3F6FD;
+		border-radius: 10px;
+		padding: 16px 12px 13px;
+		transition: all .2s;
+		&.active {
+			background: #fff;
+			box-shadow: 0px 0px 30px rgba(202, 221, 255, 0.55);
+		}
+		& .radio {
+			&__custom {
+				top: 17px;
+				left: 12px;
+			}
+		}
+		& .input-body__title {
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.07px;
+		}
+
+	}
+	&__pay-num {
+		display: flex;
+		justify-content: space-between;
+		background: #E5ECF9;
+		border-radius: 5px;
+		padding: 8px 14px 7px;
+		gap: 17px;
+		margin: 17px 0 0;
+		letter-spacing: 1.3px;
+		color: rgba(119, 145, 194, 0.5);
+	}
 }

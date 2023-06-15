@@ -12,12 +12,14 @@ import Navbar from "./Navbar/Navbar";
 import ProfileClient from "./ProfileClient/ProfileClient";
 import SocialWorkspace from "./SocialWorkspace/SocialWorkspace";
 import { formData } from "../../store";
+import PaymentClient from "./PaymentClient/PaymentClient";
+import PageNotFound from "../Main/PageNotFound/PageNotFound";
 
 const Client = props => {
 	return (
 		<main className="client">
 			<Breadcrumbs />
-			<div className="container">
+			<div className="container container_client">
 				<div className="client__row">
 					<Navbar />
 					<main className="client__body">
@@ -33,6 +35,7 @@ const Client = props => {
 								state={formData.avatar}
 								client={true}
 							/>} />
+							<Route path='/payment/*' element={<PaymentClient />} />
 						</Routes>
 					</main>
 				</div>

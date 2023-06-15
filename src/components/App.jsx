@@ -5,6 +5,7 @@ import Client from "./Client/Client";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
+import PageNotFound from "./Main/PageNotFound/PageNotFound";
 
 const App = ({ store }) => {
 	let [state, setState] = useState(store);
