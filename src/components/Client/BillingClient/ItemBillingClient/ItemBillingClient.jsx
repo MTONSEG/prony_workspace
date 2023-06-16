@@ -6,7 +6,7 @@ const ItemBillingClient = ({ plan, suggest, member, price, date, titleBtn, color
 
 	return (
 		<li className="item-billing label"
-		style={style}>
+			style={style}>
 			{color
 				? <span className="item-billing__label"
 					style={{ background: color }}></span>
@@ -29,7 +29,9 @@ const ItemBillingClient = ({ plan, suggest, member, price, date, titleBtn, color
 
 			<div className="item-billing__wrap-info">
 				<h3 className="item-billing__title">{price.title}</h3>
-				<p className="item-billing__text">{price.value}</p>
+				<p className="item-billing__text">
+					{date ? price.value : '$' + price.value + '/mo'}
+				</p>
 			</div>
 
 			{date

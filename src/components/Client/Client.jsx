@@ -13,8 +13,8 @@ import ProfileClient from "./ProfileClient/ProfileClient";
 import SocialWorkspace from "./SocialWorkspace/SocialWorkspace";
 import { formData } from "../../store";
 import PaymentClient from "./PaymentClient/PaymentClient";
-import PageNotFound from "../Main/PageNotFound/PageNotFound";
 import BillingClient from "./BillingClient/BillingClient";
+import BillingHistoryClient from "./BillingHistoryClient/BillingHistoryClient";
 
 const Client = props => {
 	return (
@@ -38,6 +38,7 @@ const Client = props => {
 							/>} />
 							<Route path='/payment/*' element={<PaymentClient />} />
 							<Route path='/billing' element={<BillingClient />} />
+							<Route path='/billing-history' element={<BillingHistoryClient />} />
 						</Routes>
 					</main>
 				</div>

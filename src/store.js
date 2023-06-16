@@ -1280,6 +1280,88 @@ export const billingCl = {
 		},
 	]
 }
+export const billingHistory = {
+	title: 'Billing History',
+	titleDate: 'Transaction date',
+	titleAmount: 'Amount',
+	list: [
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+		{
+			id: v1(),
+			date: '21 Feb 2020',
+			amount: 50,
+		},
+	]
+}
 
 export const store = {
 	header: header,
