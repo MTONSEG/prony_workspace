@@ -19,44 +19,6 @@ const PaymentClient = () => {
 			<Route path="/add" element={<AddPaymentClient
 				state={state} setState={setState}
 			/>} />
-			{/* <BigTitleClient>
-				{state.title}
-			</BigTitleClient> */}
-
-
-			{/* <ContainerClient style={{maxWidth: '444px'}}>
-				<InputFormContainer
-					name={state.name.title}
-					title={state.name.title}
-					ph={state.name.ph}
-					value={nameValue}
-					setNameValue={setNameValue}
-				/>
-				<InputFormContainer
-					name={state.lastName.title}
-					title={state.lastName.title}
-					ph={state.lastName.ph}
-					value={passValue}
-					setNameValue={setPassValue}
-				/>
-				<InputFormContainer
-					style={{padding: 0}}
-					name={state.email.title}
-					title={state.email.title}
-					ph={state.email.ph}
-					value={emailValue}
-					setNameValue={setEmailValue}
-				/>
-
-				<ButtonWrapperForm client={true}>
-					<ClearBtn
-						blue={true}
-						title='Cancel' />
-					<Button>
-						Delete
-					</Button>
-				</ButtonWrapperForm>
-			</ContainerClient> */}
 		</Routes>
 	)
 }

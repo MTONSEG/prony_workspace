@@ -14,6 +14,7 @@ import SocialWorkspace from "./SocialWorkspace/SocialWorkspace";
 import { formData } from "../../store";
 import PaymentClient from "./PaymentClient/PaymentClient";
 import PageNotFound from "../Main/PageNotFound/PageNotFound";
+import BillingClient from "./BillingClient/BillingClient";
 
 const Client = props => {
 	return (
@@ -36,6 +37,7 @@ const Client = props => {
 								client={true}
 							/>} />
 							<Route path='/payment/*' element={<PaymentClient />} />
+							<Route path='/billing' element={<BillingClient />} />
 						</Routes>
 					</main>
 				</div>

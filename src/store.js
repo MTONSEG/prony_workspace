@@ -1135,7 +1135,6 @@ export const paymentFormCl = {
 		type: 'number'
 	},
 }
-
 export const paymentCl = {
 	title: 'Payment Methods',
 	titleAddBtn: 'Add a new payment method',
@@ -1163,6 +1162,123 @@ export const paymentCl = {
 		},
 	],
 	form: paymentFormCl
+}
+export const billingCl = {
+	title: 'Billing Plan',
+	trialMess: 'Your Trial expires in X days. You can always buy a plan before the trial period ends',
+	titlePlan: 'Your plan',
+	titleOtherPlan: 'Available plans',
+	your: {
+		id: v1(),
+		titleBtn: '',
+		color: 'transparent',
+		plan: {
+			title: 'Plan',
+			value: 'Free'
+		},
+		suggest: {
+			title: 'Suggestions',
+			value: 1,
+		},
+		member: {
+			title: 'Team members',
+			value: 1
+		},
+		price: {
+			title: 'Price',
+			value: 'Free'
+		},
+		date: {
+			title: 'Billing date',
+			value: 'None'
+		}
+	},
+	list: [
+		{
+			id: v1(),
+			titleBtn: 'Buy now',
+			color: '#1565C0',
+			plan: {
+				title: 'Plan',
+				value: 'Basic'
+			},
+			suggest: {
+				title: 'Suggestions',
+				value: 1000,
+			},
+			member: {
+				title: 'Team members',
+				value: 10
+			},
+			price: {
+				title: 'Price',
+				value: 25
+			}
+		},
+		{
+			id: v1(),
+			titleBtn: 'Buy now',
+			color: '#F43658',
+			plan: {
+				title: 'Plan',
+				value: 'Basic'
+			},
+			suggest: {
+				title: 'Suggestions',
+				value: 1000,
+			},
+			member: {
+				title: 'Team members',
+				value: 10
+			},
+			price: {
+				title: 'Price',
+				value: 25
+			}
+		},
+		{
+			id: v1(),
+			titleBtn: 'Buy now',
+			color: '#272557',
+			plan: {
+				title: 'Plan',
+				value: 'Basic'
+			},
+			suggest: {
+				title: 'Suggestions',
+				value: 1000,
+			},
+			member: {
+				title: 'Team members',
+				value: 10
+			},
+			price: {
+				title: 'Price',
+				value: 25
+			}
+		},
+		{
+			id: v1(),
+			titleBtn: 'Buy now',
+			color: '#7791C2',
+			plan: {
+				title: 'Plan',
+				value: 'Basic'
+			},
+			suggest: {
+				title: 'Suggestions',
+				value: 1000,
+			},
+			member: {
+				title: 'Team members',
+				value: 10
+			},
+			price: {
+				title: 'Price',
+				value: 25
+			}
+		},
+	]
 }
 
 export const store = {

@@ -1,10 +1,11 @@
 import React from "react";
 import './BigTitleClient.scss';
 
-const BigTitleClient = ({ children, mb, }) => {
+const BigTitleClient = ({ children, mb, style }) => {
 
 	return (
-		<h1 className='big-title-client'>{children}</h1>
+		<h1 style={style}
+			className='big-title-client'>{children}</h1>
 	)
 }
 
