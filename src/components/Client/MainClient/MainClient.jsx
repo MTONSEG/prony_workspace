@@ -5,6 +5,7 @@ import { mainClient } from "../../../store";
 import { CloseRoundIcon, EditIcon, PlayIcon, PlusIcon } from "../../UI/SVGIcons/SVGIcons";
 import Button from "../../UI/Buttons/Button";
 import plusIcon from '../../../assets/icons/plus.svg';
+import { Link } from "react-router-dom";
 
 const MainClient = props => {
 	const [state, setState] = useState(mainClient);
@@ -21,21 +22,21 @@ const MainClient = props => {
 						<h2 className="main-client__name">{el.name}</h2>
 						<p className="main-client__subdomain">{el.subdomain}</p>
 						<div className="main-client__button-list">
-							<button className="main-client__item-btn">
+							<Link to='edit' className="main-client__item-btn">
 								<EditIcon />
-							</button>
-							<button className="main-client__item-btn">
+							</Link>
+							<Link to='del' className="main-client__item-btn">
 								<CloseRoundIcon />
-							</button>
-							<button className="main-client__item-btn play">
+							</Link>
+							<Link className="main-client__item-btn play">
 								<PlayIcon />
-							</button>
+							</Link>
 						</div>
 					</li>
 				))}
 			</ul>
 
-			<Button style={{
+			<Button url='add' style={{
 				maxWidth: '264px',
 				width: '100%',
 				margin: '0 auto'

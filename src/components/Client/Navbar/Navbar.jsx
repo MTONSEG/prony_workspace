@@ -10,7 +10,7 @@ const Navbar = props => {
 	return (
 		<div className="navbar">
 			<h1 className="navbar__title">
-				{state.title}
+				<Link to='/client' style={{color:'#1565C0'}}>{state.title}</Link>
 			</h1>
 			<div className="navbar__body">
 				<h2 className="navbar__subtitle">

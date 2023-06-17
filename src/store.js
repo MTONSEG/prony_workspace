@@ -852,22 +852,22 @@ export const navBar = {
 			{
 				id: v1(),
 				title: 'Profile',
-				link: ''
+				link: '/client/profile'
 			},
 			{
 				id: v1(),
 				title: 'Avatar',
-				link: ''
+				link: '/client/avatar'
 			},
 			{
 				id: v1(),
 				title: 'Email Preferences',
-				link: ''
+				link: '/client/social'
 			},
 			{
 				id: v1(),
 				title: 'Change password',
-				link: ''
+				link: '/client/change-pass'
 			},
 		]
 	},
@@ -877,17 +877,17 @@ export const navBar = {
 			{
 				id: v1(),
 				title: 'Billing Plan',
-				link: ''
+				link: '/client/billing'
 			},
 			{
 				id: v1(),
 				title: 'Payment Methods',
-				link: ''
+				link: '/client/payment'
 			},
 			{
 				id: v1(),
 				title: 'Billing History',
-				link: ''
+				link: '/client/billing-history'
 			},
 		]
 	},

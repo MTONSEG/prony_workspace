@@ -27,7 +27,7 @@ const ChangePassWorkspace = () => {
 					ph={state.current.ph}
 					type={state.current.type}
 					value={currentPass}
-					setNameValue={setCurrentPass}
+					setValue={setCurrentPass}
 				/>
 				<InputFormContainer
 					name={state.new.title}
@@ -35,7 +35,7 @@ const ChangePassWorkspace = () => {
 					ph={state.new.ph}
 					type={state.new.type}
 					value={newPass}
-					setNameValue={setNewPass}
+					setValue={setNewPass}
 				/>
 				<InputFormContainer
 					style={{padding: 0}}
@@ -44,7 +44,7 @@ const ChangePassWorkspace = () => {
 					ph={state.repeatNew.ph}
 					type={state.repeatNew.type}
 					value={repeatNewPass}
-					setNameValue={setRepeatNewPass}
+					setValue={setRepeatNewPass}
 				/>
 
 				<ButtonWrapperForm client={true}>

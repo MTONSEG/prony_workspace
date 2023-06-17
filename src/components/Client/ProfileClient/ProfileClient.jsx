@@ -26,14 +26,14 @@ const ProfileClient = () => {
 					title={state.name.title}
 					ph={state.name.ph}
 					value={nameValue}
-					setNameValue={setNameValue}
+					setValue={setNameValue}
 				/>
 				<InputFormContainer
 					name={state.lastName.title}
 					title={state.lastName.title}
 					ph={state.lastName.ph}
 					value={passValue}
-					setNameValue={setPassValue}
+					setValue={setPassValue}
 				/>
 				<InputFormContainer
 					style={{padding: 0}}
@@ -41,7 +41,7 @@ const ProfileClient = () => {
 					title={state.email.title}
 					ph={state.email.ph}
 					value={emailValue}
-					setNameValue={setEmailValue}
+					setValue={setEmailValue}
 				/>
 
 				<ButtonWrapperForm client={true}>

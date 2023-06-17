@@ -24,7 +24,7 @@ const DeleteWorkspace = () => {
 					title={state.name.title}
 					ph={state.name.ph}
 					value={nameValue}
-					setNameValue={setNameValue}
+					setValue={setNameValue}
 				/>
 
 				<ButtonWrapperForm client={true}>
